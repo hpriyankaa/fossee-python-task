@@ -8,7 +8,7 @@ A model is considered appropriate for high-level competence analysis if it not o
 
 ## Benchmarks
 ![My Screenshot](assets/benchmarks1.png)
-![My Screenshot2](assets/benchmarks2.png)
+![My Screenshot2](assets/benchmark2.png)
 ![My Screenshot3](assets/roundbenchmark.png)
 ![My Screenshot4](assets/evalcomparison.png)
 
