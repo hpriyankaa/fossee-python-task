@@ -8,7 +8,7 @@ A model is considered appropriate for high-level competence analysis if it not o
 
 ## Benchmarks
 ![My Screenshot](assets/benchmarks1.png)
-
+<img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/benchmarks1.png" alt="Sample Image" width="400" height="300">
 
 ![My Screenshot2](assets/benchmark2.png)
 
