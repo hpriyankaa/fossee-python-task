@@ -18,7 +18,7 @@ source .venv/bin/activate        # macOS/Linux/WSL
 ```bash
 pip install -r requirements.txt   # requests>=2.32.0
 ```
-3)(Server) Install vLLM (GPU box or same machine if you have a GPU):
+3) (Server) Install vLLM (GPU box or same machine if you have a GPU):
 ```bash
 pip install -U vllm
 ```
