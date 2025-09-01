@@ -8,16 +8,16 @@ A model is considered appropriate for high-level competence analysis if it not o
 
 ## Benchmarks
 <img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/benchmarks1.png" alt="Sample Image" width="900" height="1200">
-Figure 1: Qwen 2.5-Coder Benchmark w.r.t other models[13]
+<p align="center"><em>Figure 1: Qwen 2.5-Coder Benchmark vs other models [13]</em></p>
 
 <img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/benchmark2.png" alt="Sample Image" width="900" height="1200">
-Figure 2: Qwen 2.5-Coder Benchmark w.r.t variants[13]
+<p align="center"><em>Figure 2: Qwen 2.5-Coder Benchmark vs its variants [13]</em></p>
 
 <img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/roundbenchmark.png" alt="Sample Image" width="900" height="600">
-Figure 3: Qwen 2.5-Coder Benchmarks[13]
+<p align="center"><em>Figure 3: Qwen 2.5-Coder Round Benchmarks [13]</em></p>
 
 <img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/evalcomparison.png" alt="Sample Image" width="900" height="1200">
-
+p align="center"><em>Figure 4: EvalPlus Benchmark Dashboard [13]</em></p>
 
 
 ## Prototype
@@ -52,6 +52,8 @@ Figure 3: Qwen 2.5-Coder Benchmarks[13]
 [12] J. Austin et al., “Program Synthesis with Large Language Models,” arXiv.org, Aug. 16, 2021. https://arxiv.org/abs/2108.07732
 
 [13] Qwen Team, “QWeN2.5-Coder: Code more, learn more!,” Qwen, Sep. 18, 2024. https://qwenlm.github.io/blog/qwen2.5-coder/
+
+[14] “EvalPlus leaderboard.” https://evalplus.github.io/leaderboard.html
 
 
 
