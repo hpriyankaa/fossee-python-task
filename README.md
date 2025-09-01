@@ -21,6 +21,14 @@ A model is considered appropriate for high-level competence analysis if it not o
 
 
 ## Prototype
+
+As part of this work, we built a **prototype PEC pipeline** that analyzes student-written Python code, identifies key concepts and misconceptions, generates **Socratic-style questions**, and evaluates them using a structured rubric.
+
+This prototype is lightweight, runs on open-source models (e.g., **Qwen2.5-Coder** via vLLM), and produces clean reports in both console and artifact formats (JSONL, CSV, Markdown).
+
+👉 Explore the full prototype, installation steps, and detailed usage here:  
+[**Prototype Repository**](https://github.com/hpriyankaa/fossee-python-task/tree/main/Prototype)
+
 ## References
 [1] R. Li et al., “StarCoder: may the source be with you!,” arXiv.org, May 09, 2023. https://arxiv.org/abs/2305.06161.
 
