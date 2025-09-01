@@ -1,0 +1,3 @@
+{"id":"s1","task":"Write a function factorial(n) using recursion.","code":"def factorial(n):\n  if n==0: return 1\n  return n*factorial(n-1)","notes":"Correct, check edge-cases."}
+{"id":"s2","task":"Return True if list is strictly increasing.","code":"def inc(a):\n  for i in range(len(a)):\n    if a[i] > a[i+1]:\n      return False\n  return True","notes":"IndexError, off-by-one, boundary + equal case reasoning."}
+{"id":"s3","task":"Sum even numbers in list.","code":"def s(a):\n  s = 0\n  for x in a:\n    if x%2==1:\n      s+=x\n  return s","notes":"Parities flipped; conceptual gap."}

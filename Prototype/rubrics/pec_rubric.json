@@ -1,0 +1,10 @@
+{
+  "criteria": [
+    {"name":"Relevance", "desc":"Targets the student’s exact code and task"},
+    {"name":"Depth", "desc":"Probes reasoning (edge cases, invariants, complexity)"},
+    {"name":"ConceptAccuracy", "desc":"Technically correct guidance"},
+    {"name":"NonDisclosure", "desc":"Avoids giving full solutions"},
+    {"name":"Clarity", "desc":"Concise, unambiguous wording"}
+  ],
+  "scale": {"min":1,"max":5}
+}
