@@ -8,16 +8,16 @@ A model is considered appropriate for high-level competence analysis if it not o
 
 ## Benchmarks
 <img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/benchmarks1.png" alt="Sample Image" width="900" height="1200">
-<p align="center"><em>Figure 1: Qwen 2.5-Coder Benchmark vs other models [13]</em></p>
+<p align="center"><em>Figure 1: Qwen 2.5-Coder Benchmark vs other coding models [13]</em></p>
 <br>
 <img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/benchmark2.png" alt="Sample Image" width="900" height="1200">
-<p align="center"><em>Figure 2: Qwen 2.5-Coder Benchmark vs its variants [13]</em></p>
+<p align="center"><em>Figure 2: Qwen2.5-Coder model size comparison [13]</em></p>
 <br>
 <img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/roundbenchmark.png" alt="Sample Image" width="900" height="600">
-<p align="center"><em>Figure 3: Qwen 2.5-Coder Round Benchmarks [13]</em></p>
+<p align="center"><em>Figure 3: Qwen2.5-Coder vs peers across tasks [13]</em></p>
 <br>
 <img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/evalcomparison.png" alt="Sample Image" width="900" height="1200">
-<p align="center"><em>Figure 4: EvalPlus Benchmark Dashboard [13]</em></p>
+<p align="center"><em>Figure 4: EvalPlus Benchmark Leaderboad [14]</em></p>
 
 
 ## Prototype
