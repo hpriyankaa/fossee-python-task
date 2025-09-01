@@ -51,8 +51,8 @@ python main.py
 
 Clean, human-readable console report per sample (Task → Planner Summary → Socratic Questions → Rubric Scores).
 
-## What Each Component Does
-# Planner (Analysis)
+# What Each Component Does
+## Planner (Analysis)
 
 __Input:__ task, student_code
 
