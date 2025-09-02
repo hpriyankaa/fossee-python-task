@@ -75,7 +75,7 @@ Output screenshots from sample dataset used in this repo can be found below:
 <p align="center"><em>Figure 3: Output of Sample Data 3</em></p>
 <br>
 <img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/img4.png" alt="Sample Image" width="900" height="1200">
-<p align="center"><em>Figure 4: Output of Artifact Directory</em></p>
+<p align="center"><em>Figure 4: Output of Artifacts Directory</em></p>
 
 # What Each Component Does
 ## Planner (Analysis)
