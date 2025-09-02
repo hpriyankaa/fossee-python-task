@@ -57,18 +57,6 @@ The current implementation uses **vLLM** for reproducibility and GPU acceleratio
 
 
 ## Output
-<img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/img1.jpeg" alt="Sample Image" width="900" height="1200">
-<p align="center"><em>Figure 1</em></p>
-
-<img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/img2.jpeg" alt="Sample Image" width="900" height="1200">
-<p align="center"><em>Figure 1</em></p>
-
-<img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/img3.jpeg" alt="Sample Image" width="900" height="1200">
-<p align="center"><em>Figure 1</em></p>
-
-<img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/img4.png" alt="Sample Image" width="900" height="1200">
-<p align="center"><em>Figure 1</em></p>
-
 Clean, human-readable console report per sample (Task → Planner Summary → Socratic Questions → Rubric Scores). 
 <br>
 - Results are also stored in the **`artifacts/`** folder for later use:  
@@ -77,6 +65,17 @@ Clean, human-readable console report per sample (Task → Planner Summary → So
   - `.md` → nicely formatted report, ready for inclusion in papers or appendices
 <br>
 Output screenshots from sample dataset used in this repo can be found below:
+<img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/img1.jpeg" alt="Sample Image" width="900" height="1200">
+<p align="center"><em>Figure 1: Output of Sample Data 1</em></p>
+<br>
+<img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/img2.jpeg" alt="Sample Image" width="900" height="1200">
+<p align="center"><em>Figure 2: Output of Sample Data 2</em></p>
+<br>
+<img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/img3.jpeg" alt="Sample Image" width="900" height="1200">
+<p align="center"><em>Figure 3: Output of Sample Data 3</em></p>
+<br>
+<img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/img4.png" alt="Sample Image" width="900" height="1200">
+<p align="center"><em>Figure 4: Output of Artifact Directory</em></p>
 
 # What Each Component Does
 ## Planner (Analysis)
