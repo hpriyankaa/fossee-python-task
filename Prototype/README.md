@@ -50,8 +50,8 @@ python main.py
 
 While this prototype is demonstrated using **vLLM** for local inference, it is flexible and can also run with:
 
-- **Ollama** — for lightweight local model hosting with simple CLI.  
-- **OpenRouter** — for hosted API access to a wide range of open-source and commercial models.  
+- **Ollama** - for lightweight local model hosting with simple CLI.  
+- **OpenRouter** - for hosted API access to a wide range of open-source and commercial models.  
 
 The current implementation uses **vLLM** for reproducibility and GPU acceleration, but swapping in other backends only requires updating the client (`codes/llm.py`) with the appropriate API calls.
 
