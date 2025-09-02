@@ -1,4 +1,8 @@
-# Fossee-python-task
+# Fossee-python-task-3
+
+Task Title: Python Screening Task 3: Evaluating Open Source Models for Student Competence Analysis
+Name: H Priyanka
+Email: priyankah2407@gmail.com
 
 ## Research Plan
 During my research, I explored about various open source models and LLMs such as StarCoder[1], WizardCoder[2], Codestral[3][4] recently released models like Qwen2.5-Coder[5], CodeLlama[6][7], DeepSeek Coder v2[8], DeepSeek-V3[9], and Qwen3-Coder[10].Each model has it’s advantages, CodeLlama[6][7] has python-focused variant and large user base as it’s strength,DeepSeek Coder v2[8] gives a strong balance of scalability and efficiency, DeepSeek V3[9] despite being a powerful general-purpose foundation model, it is not exclusive for coding tasks and Qwen3[10] has advanced features like longer context windows and larger scaling options, but it’s ecosystem is still young.Despite these strengths, I chose Qwen2.5-Coder[5], particularly its instruction-tuned variants (0.5B–32B), as the most suitable for Python competence analysis. On benchmarks such as HumanEval[11] and MBPP[12], it not only demonstrated strong accuracy in reasoning but also proved to be adaptable, scalable across hardware, and interoperable with existing educational workflows—making it the most balanced option for immediate deployment.
