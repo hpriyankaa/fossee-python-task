@@ -58,7 +58,14 @@ The current implementation uses **vLLM** for reproducibility and GPU acceleratio
 
 ## Output
 
-Clean, human-readable console report per sample (Task → Planner Summary → Socratic Questions → Rubric Scores). Screenshots from sample dataset attached can be found below:
+Clean, human-readable console report per sample (Task → Planner Summary → Socratic Questions → Rubric Scores). 
+<br>
+- Results are also stored in the **`artifacts/`** folder for later use:  
+  - `.jsonl` → raw structured runs (full PEC outputs)  
+  - `.csv` → summary table (scores + questions + justification)  
+  - `.md` → nicely formatted report, ready for inclusion in papers or appendices
+<br>
+Screenshots from sample dataset attached can be found below:
 
 # What Each Component Does
 ## Planner (Analysis)
