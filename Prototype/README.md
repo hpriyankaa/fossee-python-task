@@ -1,6 +1,6 @@
-# PEC (Planner–Executor–Critic) — Minimal, Practical Prototype
+# PEC (Planner–Executor–Critic) Prototype
 
-A lightweight pipeline that analyzes student-written Python code, generates **Socratic prompts** that probe understanding, and **scores** the prompts against a rubric — using an **open-source model** (e.g., Qwen2.5-Coder) served via **vLLM**.
+A lightweight pipeline that analyzes student-written Python code, generates **Socratic prompts** that probe understanding, and **scores** the prompts against a rubric, using an **open-source model** (e.g., Qwen2.5-Coder) served via **vLLM**. It follows the **Orchestrator–Evaluator pattern** from Anthropic’s AI design patterns, ensuring modularity and clear separation of analysis, questioning, and scoring.
 
 ---
 
@@ -36,7 +36,7 @@ python -m vllm.entrypoints.openai.api_server \
   --port 8000
 ```
 >Tip: If VRAM is tight, lower --max-model-len to 1024 or add --quantization bitsandbytes.
-2) Point PEC to your server
+2) In a Separate Terminal, Point PEC to your server
 ```bash
 export VLLM_BASE_URL="http://localhost:8000"
 export VLLM_MODEL="Qwen/Qwen2.5-Coder-1.5B-Instruct"
@@ -46,10 +46,19 @@ export VLLM_MODEL="Qwen/Qwen2.5-Coder-1.5B-Instruct"
 python main.py
 ```
 
+## Alternative Backends
+
+While this prototype is demonstrated using **vLLM** for local inference, it is flexible and can also run with:
+
+- **Ollama** — for lightweight local model hosting with simple CLI.  
+- **OpenRouter** — for hosted API access to a wide range of open-source and commercial models.  
+
+The current implementation uses **vLLM** for reproducibility and GPU acceleration, but swapping in other backends only requires updating the client (`codes/llm.py`) with the appropriate API calls.
+
 
 ## Output
 
-Clean, human-readable console report per sample (Task → Planner Summary → Socratic Questions → Rubric Scores).
+Clean, human-readable console report per sample (Task → Planner Summary → Socratic Questions → Rubric Scores). Screenshots from sample dataset attached can be found below:
 
 # What Each Component Does
 ## Planner (Analysis)
@@ -58,11 +67,11 @@ __Input:__ task, student_code
 
 __Output (JSON):__
 
-+ concepts[] — Core Python ideas involved (e.g., recursion, control flow, loop invariants)
++ concepts[] - Core Python ideas involved (e.g., recursion, control flow, loop invariants)
 
-+ bloom — estimated Bloom’s level (Remember/Understand/Apply/Analyze/Evaluate/Create)
++ bloom - estimated Bloom’s level (Remember/Understand/Apply/Analyze/Evaluate/Create)
 
-+ misconceptions[] — Likely gaps (off-by-one, parity confusion, missing base case, etc.)
++ misconceptions[] - Likely gaps (off-by-one, parity confusion, missing base case, etc.)
 
 __Purpose:__ Turn raw code into a conceptual diagnosis that drives targeted questioning.
 
@@ -72,11 +81,11 @@ __Input:__ task, student_code, planner_json
 
 __Output (JSON):__
 
-+ questions[] —2–4 Socratic questions (edge cases, “what happens if…”, “why…”)
++ questions[] - 2–4 Socratic questions (edge cases, “what happens if…”, “why…”)
 
-+ rationale — brief reason these questions probe true understanding
++ rationale - brief reason these questions probe true understanding
 
-__Purpose:__ Ask guiding questions that uncover reasoning — without revealing solutions.
+__Purpose:__ Ask guiding questions that uncover reasoning - without revealing solutions.
 
 ## Critic (Scoring Against Rubric)
 
@@ -84,9 +93,9 @@ __Input:__ task, student_code, planner_json, executor_json, rubric
 
 __Output (JSON):__
 
-+ scores — {Relevance, Depth, ConceptAccuracy, NonDisclosure, Clarity} (1–5 each)
++ scores - {Relevance, Depth, ConceptAccuracy, NonDisclosure, Clarity} (1–5 each)
 
-+ justification — short explanation of the scoring
++ justification - short explanation of the scoring
 
 __Purpose__: Ensure prompts are on-task, deep, accurate, non-disclosive, and clear.
 
