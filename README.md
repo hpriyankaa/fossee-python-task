@@ -38,7 +38,7 @@ Explore the full prototype, installation steps, and detailed usage here:
 <br>
 
 ## References
-[1]( https://arxiv.org/abs/2305.06161.)
+[1]R. Li et al., “StarCoder: may the source be with you!,” arXiv.org, May 09, 2023. https://arxiv.org/abs/2305.06161. 
 
 
 [2] Z. Luo et al., “WizardCoder: Empowering Code Large Language Models with Evol-Instruct,” arXiv.org, Jun. 14, 2023. https://arxiv.org/abs/2306.08568.
