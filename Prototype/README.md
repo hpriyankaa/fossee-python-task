@@ -57,6 +57,17 @@ The current implementation uses **vLLM** for reproducibility and GPU acceleratio
 
 
 ## Output
+<img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/img1.png" alt="Sample Image" width="900" height="1200">
+<p align="center"><em>Figure 1</em></p>
+
+<img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/img2.png" alt="Sample Image" width="900" height="1200">
+<p align="center"><em>Figure 1</em></p>
+
+<img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/img3.png" alt="Sample Image" width="900" height="1200">
+<p align="center"><em>Figure 1</em></p>
+
+<img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/img4.png" alt="Sample Image" width="900" height="1200">
+<p align="center"><em>Figure 1</em></p>
 
 Clean, human-readable console report per sample (Task → Planner Summary → Socratic Questions → Rubric Scores). 
 <br>
