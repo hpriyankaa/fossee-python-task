@@ -84,7 +84,7 @@ Expand the Planner–Executor–Critic pipeline into a fully adaptive feedback l
 
 [8] DeepSeek-Ai et al., “DeepSeek-Coder-V2: Breaking the barrier of Closed-Source Models in Code Intelligence,” arXiv (Cornell University), Jun. 2024, doi: 10.48550/arxiv.2406.11931. Available: https://www.researchgate.net/publication/381517674_DeepSeek-Coder-V2_Breaking_the_Barrier_of_Closed-Source_Models_in_Code_Intelligence
 
-[9] “DeepSeek-V3 Technical Report.” Available: https://arxiv.org/html/2412.19437v1
+[9] DeepSeek-Ai et al., “DeepSeek-V3 Technical Report,” arXiv.org, Dec. 27, 2024. https://arxiv.org/abs/2412.19437v1
 
 [10] A. Yang et al., “QWEN3 Technical Report,” arXiv.org, May 14, 2025. Available: https://arxiv.org/abs/2505.09388
 
