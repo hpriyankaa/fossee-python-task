@@ -62,6 +62,8 @@ Fine-tune Qwen2.5-Coder-Instruct on education-specific datasets (e.g., student s
 
 Expand the Planner–Executor–Critic pipeline into a fully adaptive feedback loop, where identified misconceptions automatically trigger new rounds of targeted Socratic questioning. Add multi-round evaluation to measure whether students improve after model-driven feedback.
 
+<br>
+
 ## References
 [1]R. Li et al., “StarCoder: may the source be with you!,” arXiv.org, May 09, 2023. https://arxiv.org/abs/2305.06161. 
 
