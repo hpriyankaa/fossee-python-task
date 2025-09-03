@@ -79,24 +79,20 @@ Expand the Planner–Executor–Critic pipeline into a fully adaptive feedback l
 <br>
 
 # References
+## References
 [1]R. Li et al., “StarCoder: may the source be with you!,” arXiv.org, May 09, 2023. https://arxiv.org/abs/2305.06161. 
-
 
 [2] Z. Luo et al., “WizardCoder: Empowering Code Large Language Models with Evol-Instruct,” arXiv.org, Jun. 14, 2023. https://arxiv.org/abs/2306.08568.
 
+[3] Mistral AI, “Codestral | Mistral AI,” Mistral.ai, May 29, 2024. [Online]. Available: https://mistral.ai/news/codestral
 
-[3] “Codestral | Mistral AI.” https://mistral.ai/news/codestral “mistralai/Codestral-22B-v0.1.
-
-
-[4] Hugging Face.” https://huggingface.co/mistralai/Codestral-22B-v0.1.
-
+[4] Hugging Face, “mistralai/Codestral-22B-v0.1,” Hugging Face, May 29, 2024. [Online]. Available: https://huggingface.co/mistralai/Codestral-22B-v0.1
 
 [5] B. Hui et al., “QWen2.5-Coder Technical Report,” arXiv.org, Sep. 18, 2024. https://arxiv.org/abs/2409.12186.
 
+[6] B. Rozière et al., “Code llama: Open Foundation Models for code,” arXiv.org, Aug. 24, 2023. https://arxiv.org/abs/2308.12950
 
-[6] “Code llama: Open Foundation Models for code.” Available: https://arxiv.org/html/2308.12950
-
-[7] “Meta Code Llama,” Meta Llama. Available: https://www.llama.com/code-llama/
+[7] Meta, “Meta Code Llama,” Llama.com, Aug. 24, 2023. [Online]. Available: https://www.llama.com/code-llama/
 
 [8] DeepSeek-Ai et al., “DeepSeek-Coder-V2: Breaking the barrier of Closed-Source Models in Code Intelligence,” arXiv (Cornell University), Jun. 2024, doi: 10.48550/arxiv.2406.11931. Available: https://www.researchgate.net/publication/381517674_DeepSeek-Coder-V2_Breaking_the_Barrier_of_Closed-Source_Models_in_Code_Intelligence
 
@@ -110,8 +106,6 @@ Expand the Planner–Executor–Critic pipeline into a fully adaptive feedback l
 
 [13] Qwen Team, “QWeN2.5-Coder: Code more, learn more!,” Qwen, Sep. 18, 2024. https://qwenlm.github.io/blog/qwen2.5-coder/
 
-[14] EvalPlus, “EvalPlus leaderboard.” Accessed: Sep. 3, 2025. [Online]. Available: https://evalplus.github.io/leaderboard.html
+[14] EvalPlus, “EvalPlus leaderboard,” EvalPlus. [Online]. Available: https://evalplus.github.io/leaderboard.html
 
-[15] Anthropic, “Building effective AI agents.” Accessed: Sep. 3, 2025. [Online]. Available: https://www.anthropic.com/engineering/building-effective-agents
-
-
+[15] Anthropic, “Building effective AI agents,” Anthropic. [Online]. Available: https://www.anthropic.com/engineering/building-effective-agents
