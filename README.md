@@ -96,11 +96,8 @@ Expand the Planner–Executor–Critic pipeline into a fully adaptive feedback l
 
 [13] Qwen Team, “QWeN2.5-Coder: Code more, learn more!,” Qwen, Sep. 18, 2024. https://qwenlm.github.io/blog/qwen2.5-coder/
 
-[14] “EvalPlus leaderboard.” https://evalplus.github.io/leaderboard.html.
+[14] EvalPlus, “EvalPlus leaderboard.” Accessed: Sep. 3, 2025. [Online]. Available: https://evalplus.github.io/leaderboard.html
 
-[15] “Building effective AI agents.” https://www.anthropic.com/engineering/building-effective-agents.
-
-
-
+[15] Anthropic, “Building effective AI agents.” Accessed: Sep. 3, 2025. [Online]. Available: https://www.anthropic.com/engineering/building-effective-agents
 
 
