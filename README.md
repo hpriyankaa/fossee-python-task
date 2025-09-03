@@ -53,7 +53,7 @@ I chose the instruction-tuned Qwen2.5-Coder over the base model because it is op
 
 # Prototype
 
-As part of this work, we built a **prototype PEC pipeline** that analyzes student-written Python code, identifies key concepts and misconceptions, generates **Socratic-style questions**, and evaluates them using a structured rubric.
+As part of this work, I built a **prototype PEC pipeline** that analyzes student-written Python code, identifies key concepts and misconceptions, generates Socratic-style questions, and evaluates them using a structured rubric.
 
 This prototype is lightweight, runs on open-source models (e.g., **Qwen2.5-Coder** via vLLM), and produces clean reports in both console and artifact formats (JSONL, CSV, Markdown).
 
