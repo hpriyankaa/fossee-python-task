@@ -118,7 +118,7 @@ __Purpose__: Ensure prompts are on-task, deep, accurate, non-disclosive, and cle
 
 __Overall Score__: Weighted average emphasizing ConceptAccuracy & NonDisclosure.
 
-# Possible Future Research Plan
+# Future Research Plan
 
 ## Cross-Model Comparisons
 
