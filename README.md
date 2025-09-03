@@ -8,6 +8,10 @@ Email: priyankah2407@gmail.com
 <br>
 
 ## Table of Contents
+- [Research Plan](## Research Plan)
+- [Benchmarks](## Benchmarks)
+- [Prototype](## Prototype)
+- [Future Plan](# Future Research Plan)
 
 ## Research Plan
 To assess LLMs and Open Source Models on their ability to support high-level student competence analysis in Python, I researched on various models such as CodeLlama[6], DeepSeek Coder v2[8], DeepSeek-V3[9], Qwen3-Coder[10], StarCoder[1], WizardCoder[2], and Codestral[3][4]. While each had it’s own advantages,like CodeLlama’s[6] specialization in Python, DeepSeek’s[8][9] scalability, Qwen3-Coder’s[10] long context. These models have constraints like high resource demands or less established ecosystems. Out of all these choices, I find Qwen2.5-Coder(instruction-tuned)[5] as the most balanced option because it is education-task-oriented, exhibits high-performance on the benchmarks such as HumanEval[11] and MBPP[12], and can be tested and scaled across parameters 0.5B to 32B on basis of available compute resources. A model is suitable for competence analysis if it can not only solve problems but analyzes the student's code, surfaces misconceptions, and proposes prompts that encourage further reasoning without directly revealing the final solution. Qwen2.5-Coder-Instruct[5] fulfills all these criterion better than other models.
@@ -39,6 +43,20 @@ Explore the full prototype, installation steps, and detailed usage here:
 [**Prototype Directory**](https://github.com/hpriyankaa/fossee-python-task/tree/main/Prototype).
 
 <br>
+
+# Future Research Plan
+
+## Cross-Model Comparisons
+
+Conduct side-by-side evaluations of Qwen2.5-Coder, Qwen3-Coder, and DeepSeek Coder v2 using the same PEC prototype. Track differences in accuracy, interpretability, efficiency, and pedagogical usefulness.
+
+## Instruction-Tuning Customization
+
+Fine-tune Qwen2.5-Coder-Instruct on education-specific datasets (e.g., student submissions with annotated misconceptions) to better align the model with pedagogical needs.
+
+## Prototype Enhancement (PEC 2.0)
+
+Expand the Planner–Executor–Critic pipeline into a fully adaptive feedback loop, where identified misconceptions automatically trigger new rounds of targeted Socratic questioning. Add multi-round evaluation to measure whether students improve after model-driven feedback.
 
 ## References
 [1]R. Li et al., “StarCoder: may the source be with you!,” arXiv.org, May 09, 2023. https://arxiv.org/abs/2305.06161. 
