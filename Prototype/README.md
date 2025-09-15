@@ -18,42 +18,65 @@ source .venv/bin/activate        # macOS/Linux/WSL
 ```bash
 pip install -r requirements.txt   # requests>=2.32.0
 ```
-3) (Server) Install vLLM (GPU box or same machine if you have a GPU):
-```bash
-pip install -U vllm
-```
 
 ## Running the Prototype
 
-1) Start the model server (vLLM)
->Run in a separate terminal (Linux/WSL/macOS). For an 8GB GPU, these settings are safe:
-```bash
-python -m vllm.entrypoints.openai.api_server \
-  --model Qwen/Qwen2.5-Coder-1.5B-Instruct \
-  --dtype float16 \
-  --max-model-len 2048 \
-  --gpu-memory-utilization 0.6 \
-  --port 8000
-```
->Tip: If VRAM is tight, lower --max-model-len to 1024 or add --quantization bitsandbytes.
-2) In a Separate Terminal, Point PEC to your server
-```bash
-export VLLM_BASE_URL="http://localhost:8000"
-export VLLM_MODEL="Qwen/Qwen2.5-Coder-1.5B-Instruct"
-```
-3) Run PEC over the sample dataset
-```bash
-python main.py
-```
+The PEC prototype supports two primary backends:
 
-## Alternative Backends
+### 1. Ollama (Local Inference)
+Ollama is a lightweight local model runner that works on CPU or GPU.
 
-While this prototype is demonstrated using **vLLM** for local inference, it is flexible and can also run with:
+1. Install Ollama: [https://ollama.com/download](https://ollama.com/download)  
+2. Pull the required model (select the model size, e.g., 1.5B, 7B, based on system resources and availability, this provides scalability):
+   ```bash
+   ollama pull qwen2.5-coder:1.5b-instruct
+   ```
+3. Start the Ollama server:
+   ```bash
+   ollama serve
+   ```
+4. Set Environment Variables:
+   ```bash
+   export PEC_BACKEND=ollama
+   export OLLAMA_MODEL="qwen2.5-coder:1.5b-instruct"
+   ```
+5. Run the PEC Prototype now:
+   On Windows, Use:
+   ```bash
+   python main.py
+   ```
+   On Linux/WSL/macOS, Use:
+   ```bash
+   python3 main.py
+   ```
 
-- **Ollama** - for lightweight local model hosting with simple CLI.  
-- **OpenRouter** - for hosted API access to a wide range of open-source and commercial models.  
+### 2. OpenRouter (Hosted Inference)
+OpenRouter provides API access to many open and commercial models without requiring local GPU resources.  
+Since models are hosted remotely, you can run any available weight (e.g., 7B, 14B, 32B), and in the case of **Qwen2.5-Coder-Instruct**, multiple weights are offered for free.
 
-The current implementation uses **vLLM** for reproducibility and GPU acceleration, but swapping in other backends only requires updating the client (`codes/llm.py`) with the appropriate API calls.
+1. Sign up at [https://openrouter.ai](https://openrouter.ai) and generate an API key.  
+2. Set environment variables:
+   ```bash
+   export PEC_BACKEND=openrouter
+   export OPENROUTER_API_KEY="sk-or-..."
+   export OPENROUTER_MODEL="qwen-2.5-coder-32b-instruct:free"
+   ```
+3. Run the PEC Prototype now:
+   On Windows, Use:
+   ```bash
+   python main.py
+   ```
+   On Linux/WSL/macOS, Use:
+   ```bash
+   python3 main.py
+   ```
+
+## Work in Progress: Alternative Backends
+
+This prototype currently runs with **Ollama** (local) and **OpenRouter** (hosted), making it portable across CPU and non-GPU environments.  
+
+Looking ahead, it can also be adapted to use **vLLM** for faster local inference on GPU-equipped systems.  
+This would allow scaling to larger models with optimized throughput, which could be developed further based on project needs and availability of GPU resources.  
 
 
 ## Output
