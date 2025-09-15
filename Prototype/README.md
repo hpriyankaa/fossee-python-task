@@ -1,6 +1,7 @@
 # PEC (Planner-Executor-Critic) Prototype
+This prototype demonstrates a lightweight **Planner–Executor–Critic (PEC)** pipeline that analyzes student-written Python code, generates **Socratic prompts** to probe understanding, and scores those prompts against a rubric. It is designed to explore how open-source models can be adapted for high-level student competence analysis.
 
-A lightweight pipeline that analyzes student-written Python code, generates **Socratic prompts** that probe understanding, and **scores** the prompts against a rubric, using an **open-source model** (e.g., Qwen2.5-Coder) served via **vLLM**. It follows the **Orchestrator–Evaluator pattern** from Anthropic’s AI design patterns, ensuring modularity and clear separation of analysis, questioning, and scoring.
+The pipeline follows the **orchestrator–evaluator pattern** described in Anthropic’s AI design patterns, ensuring modularity and clear separation of analysis, questioning, and scoring. It supports both **local inference (Ollama)** and **cloud inference (OpenRouter)**. 
 
 ---
 
