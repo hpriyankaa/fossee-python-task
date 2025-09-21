@@ -23,19 +23,31 @@ To validate this, I developed a Planner–Executor–Critic (PEC)[15] prototype 
 # Reasoning
 
 ## What makes a model suitable for high-level competence analysis?
-A suitable model should be able to analyze student-written code, identify misconceptions, and generate probing prompts that encourage reasoning without revealing full solutions. Beyond accuracy, it should be trained on relevant datasets that capture reasoning patterns and common errors, so its feedback is aligned with real learning contexts. The model should also provide interpretable and scalable feedback that works in both classroom and individual settings, and be supported by a mature ecosystem with active development, frequent commits, and integration resources to ensure long-term reliability and practicality.
+- **Pedagogical alignment**: The model should analyze student-written code, identify misconceptions, and generate probing prompts that encourage reasoning without revealing full solutions.
+- **Robust training data**: It must be trained on high-quality, code-rich datasets that capture syntax, logic, common patterns, and typical student errors.
+- **Practical scalability**: The model should be efficient to deploy on common infrastructure (Colab, mid-range GPUs, or CPUs) and adaptable across difficulty levels, from basic loops to advanced algorithms.
+- **Fairness and reliability**: It should minimize bias in evaluating coding styles, provide interpretable feedback, and be backed by an actively maintained ecosystem with frequent updates and integration support.
 
 ## How would you test whether a model generates meaningful prompts?
-I would run it with a PEC-type configuration: the Planner characterizes ideas and gaps in student code, the Executor generates Socratic prompts and the Critic evaluates them in terms of relevance, depth, clarity and whether they avoid revealing the final solution.  A simple rubric and limited student trials can then confirm if prompts actually help surface misconceptions and guide deeper reasoning
+To test whether a model generates meaningful prompts, I set up a PEC-style configuration (Planner-Executor-Critic). In this setup:
+- The **Planner** analyzed student-written code, identifying underlying ideas, conceptual gaps, and potential misconceptions.
+- The **Executor** generated **Socratic prompts** that directly targeted these gaps, probing the student’s reasoning without revealing the final solution.
+- The **Critic** evaluated each prompt against a clear rubric, assessing its relevance to the code, the depth of its inquiry, the clarity of its phrasing, and its strict avoidance of solution leakage.
+This was complemented by evaluation on a curated dataset, which confirmed whether prompts actually surfaced misconceptions and guided deeper reasoning. By combining rubric-based evaluation with observed learning outcomes, I was able to determine when a prompt was not only linguistically well-formed, but also pedagogically effective. Sample outputs from this process can be found in the [Prototype Output](https://github.com/hpriyankaa/fossee-python-task/tree/main/Prototype#output) directory.
 
 ## What trade-offs might exist between accuracy, interpretability, and cost?
-Models like Qwen3 or DeepSeek-V3 achieve higher accuracy and can tackle more complex tasks, but they require greater compute resources, their reasoning is often less transparent, and their ecosystems are still evolving with fewer integration resources and community contributions. By contrast, the instruction-tuned Qwen2.5 is more efficient to run, produces clearer, more interpretable feedback for competence analysis, and benefits from a more established ecosystem with better integration support and active development, though it does not reach the very top end of accuracy in comparison to newer models. The trade-off is selecting a model that balances credibility in results with interpretability for learners, cost-effectiveness for deployment, and ecosystem maturity for long-term reliability.
+- **Accuracy vs complexity**: Larger models (e.g., Qwen3, DeepSeek-V3) achieve higher accuracy and handle complex reasoning, but at significantly higher compute cost.
+- **Interpretability**: Comparitively smaller instruction-tuned models (e.g., Qwen2.5) often produce feedback that is easier for learners to follow, while larger models may generate outputs that are harder to understand or justify.
+- **Cost vs deployability**: Comparatively smaller models are cheaper to run and can be deployed in practical environments (Colab, classroom servers), while large ones may be impractical.
+- **Ecosystem maturity**: Established models with active updates and integrations provide more reliable, long-term value than newer but less proven alternatives.
+The trade-off is choosing a model that balances credible results, interpretability for learners, cost-effective deployment, and long-term reliability rather than optimizing for a single dimension.
 
 ## Why did you choose the model you evaluated, and what are its strengths or limitations?
-I chose the instruction-tuned Qwen2.5-Coder over the base model because it is optimized for educational settings able to follow instructions, surface misconceptions, and generate reasoning-focused prompts, which the base model cannot do reliably. Compared to newer models like Qwen3 or DeepSeek-V3, it offers a stronger balance of benchmark accuracy (HumanEval, MBPP) and scalability across 0.5B–32B parameters, without the high compute costs or less mature ecosystems of those alternatives. Its strengths are instruction-tuning, flexible deployment, and interpretable outputs. Its limitation is that it does not yet match the very highest raw accuracy or longest context handling of the latest models, but these trade-offs are offset by its stability and practicality for real-world educational use.
-
-
-
+- **Instruction-tuning advantage**: Qwen2.5-Coder-Instruct was chosen over its base version because it better follows pedagogical prompts, identifies misconceptions, and generates reasoning-focused feedback.
+- **Balanced performance**: It combines solid coding accuracy with interpretability, scaling across parameter sizes (0.5B–32B) without requiring heavy compute resources.
+- **Practical alternative to SOTA**: Newer models like Qwen3 or DeepSeek-V3 achieve higher raw accuracy but are costlier to run and less stable for classroom or research use.
+- **Ecosystem reliability**: Qwen2.5 benefits from active updates, integrations, and a mature community, making it a dependable option for long-term educational deployment.
+**Limitation**: Qwen2.5 does not yet match the very top-end accuracy or longest context handling of newer models, but it delivers the best balance of interpretability, efficiency, and reliability for competence analysis.
 
 # Benchmarks
 <img src="https://github.com/hpriyankaa/fossee-python-task/blob/main/assets/benchmarks1.png" alt="Sample Image" width="900" height="1200">
