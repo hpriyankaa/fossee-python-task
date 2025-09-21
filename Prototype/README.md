@@ -10,8 +10,6 @@ For testing, a curated dataset was assembled from proven, publicly available sou
 
 ## Installation
 
-> Python 3.10–3.12 recommended. Works on Linux/WSL/macOS. (Windows users: run vLLM in WSL.)
-
 1) Create & activate a virtual environment:
 ```bash
 python -m venv .venv
@@ -24,6 +22,8 @@ pip install -r requirements.txt   # requests>=2.32.0
 ```
 
 ## Running the Prototype
+
+The PEC prototype is deliberately designed with alternative backend support, allowing it to run seamlessly on virtually any computer or system. By supporting both Ollama (for lightweight, local inference) and OpenRouter (for flexible, cloud-based inference across multiple models), the prototype remains portable, system-agnostic, and accessible. This ensures that researchers and educators can deploy and evaluate the pipeline without hardware restrictions or vendor lock-in, making it adaptable for both personal experimentation and large-scale classroom settings.
 
 The PEC prototype supports two primary backends:
 
