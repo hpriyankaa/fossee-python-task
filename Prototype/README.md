@@ -4,9 +4,9 @@ This prototype demonstrates a lightweight **Planner–Executor–Critic (PEC)** 
 The pipeline follows the **orchestrator–evaluator pattern** described in Anthropic’s AI design patterns, ensuring modularity and clear separation of analysis, questioning, and scoring. It supports both **local inference (Ollama)** and **cloud inference (OpenRouter)**. 
 
 ---
-## Curated Evaluation Set
+## Dataset Preparation
 
-For testing, a curated dataset was assembled from proven, publicly available sources frequently used in programming education research (e.g., MBPP, APPS, CSEDM Challenge). This ensures that evaluations are grounded in representative student-style Python code and reflect authentic misconceptions, error patterns, and problem-solving strategies.
+For testing, a curated dataset was assembled from proven, publicly available sources frequently used in programming education research (e.g., MBPP, APPS, CSEDM Challenge). This ensures that evaluations are grounded in representative student-style Python code and reflect authentic misconceptions, error patterns, and problem-solving strategies. From this collection, three representative questions have been curated for sample testing and are included in this repository. 
 
 ## Installation
 
