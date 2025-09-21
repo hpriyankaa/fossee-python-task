@@ -4,6 +4,9 @@ This prototype demonstrates a lightweight **Planner–Executor–Critic (PEC)** 
 The pipeline follows the **orchestrator–evaluator pattern** described in Anthropic’s AI design patterns, ensuring modularity and clear separation of analysis, questioning, and scoring. It supports both **local inference (Ollama)** and **cloud inference (OpenRouter)**. 
 
 ---
+## Curated Evaluation Set
+
+For testing, a curated dataset was assembled from proven, publicly available sources frequently used in programming education research (e.g., MBPP, APPS, CSEDM Challenge). This ensures that evaluations are grounded in representative student-style Python code and reflect authentic misconceptions, error patterns, and problem-solving strategies.
 
 ## Installation
 
@@ -144,14 +147,23 @@ __Overall Score__: Weighted average emphasizing ConceptAccuracy & NonDisclosure.
 
 # Future Research Plan
 
+# Future Research Plan
+
 ## Cross-Model Comparisons
 
-Conduct side-by-side evaluations of Qwen2.5-Coder, Qwen3-Coder, and DeepSeek Coder v2 using the same PEC prototype. Track differences in accuracy, interpretability, efficiency, and pedagogical usefulness.
+Conduct side-by-side evaluations of multiple models including Qwen2.5-Coder, Qwen3-Coder, DeepSeek Coder v2 and much more using the same PEC prototype. Track differences in accuracy, interpretability, efficiency, and pedagogical usefulness.
 
 ## Instruction-Tuning Customization
 
 Fine-tune Qwen2.5-Coder-Instruct on education-specific datasets (e.g., student submissions with annotated misconceptions) to better align the model with pedagogical needs.
+- Use CodeT5/GraphCodeBERT sidecar tagging to automatically generate misconception and concept labels for fine-tuning data.
+- Reduce manual annotation effort and ensure higher-quality supervision for education-specific tuning.
 
 ## Prototype Enhancement (PEC 2.0)
+
+Expand the Planner–Executor–Critic pipeline into a fully adaptive feedback loop, where identified misconceptions automatically trigger new rounds of targeted Socratic questioning. Add multi-round evaluation to measure whether students improve after model-driven feedback.
+- Incorporate Knowledge Tracing (pyBKT/pyKT) so each feedback round updates student concept mastery scores.
+- Drive the next set of Socratic prompts based on low-mastery concepts to make the loop adaptive and personalized.
+
 
 Expand the Planner–Executor–Critic pipeline into a fully adaptive feedback loop, where identified misconceptions automatically trigger new rounds of targeted Socratic questioning. Add multi-round evaluation to measure whether students improve after model-driven feedback.
